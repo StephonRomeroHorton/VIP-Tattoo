@@ -268,12 +268,8 @@ main {
   font-style: normal;
 }
 .slogan-container span{
-  background: linear-gradient(45deg, #ffd700, #ffcc00, #ffb300, #f1c40f, #e1ad01);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent; /* Needed for Safari */
-color: transparent; /* For other browsers */
-
-
+  color:#e1ad01;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9);
 }
 
 
@@ -902,13 +898,17 @@ font-size: 1.3rem;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; /* Needed for Safari */
   color: transparent; /* For other browsers */
-  
+ 
   border-bottom: 1px solid white;
   padding-bottom: .5rem;
   font-weight: bolder;
 }
 .social-icons-div i:hover{
-  color: white;
+  background: none; /* Remove the gradient background */
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: white; /* Set the hover color to white */
+  color: white; 
+  
 }
 .gallery-link-div{
 width: 100%;
