@@ -1,0 +1,185 @@
+body{
+  height: 100vh;
+  background-color: #290000;
+  color: rgba(255, 255, 255, 0.868);
+  background-image: url(bg.png);
+  font-family: "New Amsterdam", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.artist-container{
+  margin-top: 7rem;
+  display: flex;
+  width: 80%;
+  margin-bottom: 3rem;
+
+  width: 80%;
+  
+  background-color: #110000;
+  color: rgba(255, 255, 255, 0.868);
+  background-image: url(bg.png);
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 2rem rgba(255, 255, 255, 0.108);
+}
+.artist-info{
+  height: 100%;
+margin-left: 3rem;
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+}
+.artist-info p{
+width: 100%;
+text-align: center;
+font-size: 3rem;
+padding-bottom: 1rem;
+background: linear-gradient(45deg, #ffd700, #ffcc00, #ffb300, #f1c40f, #e1ad01);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+.artist-info span{
+
+
+width: 100%;
+font-size: 1.5rem;
+
+
+}
+.gallery-artist-img{
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: baseline;
+
+}
+.gallery-artist-img img{
+  display: block;
+  width: 60%; /* Ensure the image covers the entire div */ /* Fill the container completely */
+  object-fit: cover; /* Keep the aspect ratio of the image */
+  filter: blur(0px);
+  border-radius: 10rem;
+  border: goldenrod .1rem solid;
+}
+.gallery-title{
+  width: 100%;
+  text-align: center;
+  font-size: 4rem;
+  letter-spacing: 0.3rem;
+}
+.gallery-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Create four equal columns */
+  gap: 5rem; /* Optional: Add space between items */
+  padding: 2rem;
+}
+.tattoo-img{
+width: 100%;
+  border: white solid .2rem;
+}
+.gallery-container img{
+  display: block;
+  width: 100%; /* Ensure the image covers the entire div */ /* Fill the container completely */
+  object-fit: cover; /* Keep the aspect ratio of the image */
+  filter: blur(0px);
+}
+.horton-div{
+  background-color: #110000;
+  color: rgba(255, 255, 255, 0.868);
+  background-image: url(bg.png);
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 2rem rgba(255, 255, 255, 0.108);
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 0.5rem;
+
+}
+.horton-gal{
+  
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+.horton-gal span{
+  background: linear-gradient(45deg, #ffd700, #ffcc00, #ffb300, #f1c40f, #e1ad01);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+@media (max-width: 800px) {
+.artist-container{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.gallery-artist-img{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  margin-top: 2rem;
+  
+  }
+  .gallery-artist-img img{
+    display: block;
+    width: 40%; /* Ensure the image covers the entire div */ /* Fill the container completely */
+    object-fit: cover; /* Keep the aspect ratio of the image */
+    filter: blur(0px);
+    border-radius: 10rem;
+    border: goldenrod .1rem solid;
+  }
+  .gallery-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Create four equal columns */
+    gap: 5rem; /* Optional: Add space between items */
+    padding: 2rem;
+  }
+  .artist-info span{
+
+
+    width: 100%;
+    font-size: 1.3rem;
+    
+    
+    }
+    .artist-info{
+      height: 100%;
+    margin-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    }
+}
+@media (max-width: 460px) {
+  .gallery-container{
+    display: grid;
+    grid-template-columns: 1fr; /* Create four equal columns */
+    gap: 5rem; /* Optional: Add space between items */
+    padding: 2rem;
+  }
+  .artist-info span{
+
+
+    width: 100%;
+    font-size: 1rem;
+    
+    
+    }
+    .gallery-artist-img img{
+      display: block;
+      width: 60%; /* Ensure the image covers the entire div */ /* Fill the container completely */
+      object-fit: cover; /* Keep the aspect ratio of the image */
+      filter: blur(0px);
+      border-radius: 10rem;
+      border: goldenrod .1rem solid;
+    }
+}

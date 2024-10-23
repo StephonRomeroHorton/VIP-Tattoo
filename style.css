@@ -1,0 +1,1108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+ font-size: 16px;
+  font-family: Arial, sans-serif;
+  
+}
+
+/* For WebKit browsers (Chrome, Safari, Edge) */
+
+
+
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #640101; /* Darker red on hover */
+}
+
+/* For Firefox */
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #430101 #ceaf02;  /* Dark red scrollbar thumb and gold track */
+}
+
+
+nav{
+  width: 100%;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  height: 4rem;
+  top: 0;
+  z-index: 2;
+  font-family: "Protest Guerrilla", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  position: fixed;
+
+ 
+ 
+ 
+
+}
+.blur-background {
+  backdrop-filter: blur(10px); /* Apply blur effect */
+  background: rgba(255, 255, 255, 0); /* Adjust background for blur */
+}
+.company-logo{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100%;
+width: 20%;
+}
+.company-logo p{
+font-size: 3rem;
+font-weight: bolder;
+background: linear-gradient(45deg, #ffd700, #ffcc00, #ffb300, #f1c40f, #e1ad01);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+
+}
+.company-logo span{
+  font-size: 2rem;
+  font-family: "New Amsterdam", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.website-navigation{
+width: 35%;
+height: 100%;
+}
+.website-navigation ul{
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+height: 100%;
+padding-right: 2rem;
+}
+.website-navigation i{
+display: none;
+}
+.website-navigation li a{
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+  font-family: "Protest Guerrilla", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.3rem;
+  
+}
+.website-navigation li a:hover{
+ color: #b20101;
+text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+.dropdown{
+  display: none;
+}
+@media (max-width: 1200px) {
+  .website-navigation{
+    width: 45%;
+    height: 100%;
+    }
+    
+}
+@media (max-width:990px) {
+  .company-logo{
+    width: auto;
+    margin-left: 1.5rem;
+    }
+}
+@media (max-width: 700px) {
+  .website-navigation li a{
+    display: none;
+  }
+  .website-navigation i{
+    display: block;
+    font-size: 2rem;
+  }
+  .website-navigation i:hover{
+    color: #b20101;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+  }
+  .dropdown {
+    display: none; /* Hide dropdown menu by default */
+    position: fixed;
+    border-radius: 1.5rem;
+    top: -100vh; /* Start off-screen */
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    background: var(--light-bg);
+    z-index: 1000; /* Ensure dropdown appears above other content */
+    background: linear-gradient(45deg, #ffd700, #ffcc00, #ffb300, #f1c40f, #e1ad01);
+    transition: right 1s ease-in-out; /* Smooth slide-in effect */
+  }
+  .dropdown-navbar-menu{
+    height: 100vh;
+    width: 100%;
+  padding-top: 4rem;
+  }
+  .dropdown-navbar-menu li{
+    
+    margin: 2rem;
+  }
+  .dropdown-navbar-menu a{
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: #b20101;
+  }
+  .dropdown-navbar-menu a:hover{
+    color: white;
+  }
+  
+  .dropdown.open {
+    display: block; /* Show dropdown when open class is added */
+    top: 4rem; /* Position dropdown below navbar */
+  }
+}
+/*Navigation section ends here*/
+
+/*Home Section Starts Here*/
+main {
+  position: relative;
+  height: 35rem; /* Adjust as needed */
+  overflow: hidden;
+  width: 100%;
+  padding-top: 4rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#background-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  object-fit: cover;
+  z-index: -1;
+}
+.line-div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 67%;
+}
+.line-div div{
+  border-bottom: .1rem solid white;
+  width: 100%;
+}
+.sideways-container{
+  width: 20%;
+  height: 70%;
+  color: white;
+  font-style: italic;
+ position: relative;
+ font-family: "Protest Guerrilla", sans-serif;
+ font-weight: 400;
+ font-style: normal;
+ 
+
+}
+.sideways-div{
+  width: 160%;
+ 
+  
+  position: absolute;
+  top: 100%;
+  left: 0;
+  transform: rotate(-90deg);
+  transform-origin: top left;
+  margin-left: 2rem;
+}
+.top-div{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.top-div p{
+  width:40%;
+  font-style: italic;
+  font-size: 1rem;
+  font-weight: 600;
+  
+}
+.bottom-div{
+  width: 100%;
+  display: flex;
+  text-align: left;
+  justify-content: space-between;
+}
+
+.slogan-container{
+  
+  height: 80%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: left;
+  font-family: "New Amsterdam", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.slogan-container h2{
+  font-size: 6rem;
+  color: white;
+  margin-bottom: 2rem;
+  font-family: "New Amsterdam", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.slogan-container span{
+  background: linear-gradient(45deg, #ffd700, #ffcc00, #ffb300, #f1c40f, #e1ad01);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+
+.btn-main-container{
+  width: 100%;
+display: flex;
+
+}
+.btn-main-container button{
+  color: white;
+  background-color: #430101;
+  padding: 0.5rem 1.5rem; /* Adjust padding to control the size of the oval */
+  border: none;
+  /* High border-radius for oval shape */
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.2s;
+  margin-right: 1rem;
+}
+.btn-main-container button:hover{
+  background-color: #6c0000;
+}
+.btn-main-container p{
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.887);
+  text-align: left;
+  border-left: solid .1rem white;
+  padding-left: .5rem;
+}
+.slogan-container .down-arrow{
+  color: white;
+  margin-top: 3rem;
+  font-size: 2.5rem;
+  display: inline-block;
+  animation: moveArrow 2s infinite ease-in-out;
+}
+.slogan-container .down-arrow:hover{
+  color: #6c0000;
+  cursor: pointer;
+}
+@keyframes moveArrow {
+  0%, 100% {
+    transform: translateY(0); /* Arrow at its original position */
+  }
+  50% {
+    transform: translateY(-15px); /* Arrow moves up by 10px */
+  }
+}
+
+
+
+
+.home-img-container{
+  width: 30%;
+  position: relative;
+  height: auto; /* Maintain aspect ratio */
+  overflow: hidden;
+  padding-top: 30%;
+  padding-left: 1rem;
+}
+
+
+.home-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  height: 100%;
+  clip-path: polygon(
+    15% 0%,   /* Top left */
+    85% 0%,   /* Top right */
+    100% 15%, /* Right top */
+    100% 85%, /* Right bottom */
+    85% 100%, /* Bottom right */
+    15% 100%, /* Bottom left */
+    0% 85%,   /* Left bottom */
+    0% 15%    /* Left top */
+);
+}
+
+.home-img img {
+  display: block;
+  width: 100%; /* Ensure the image covers the entire div */
+  height: 100%; /* Fill the container completely */
+  object-fit: cover; /* Keep the aspect ratio of the image */
+  filter: blur(0px);
+}
+/*Home section responsive styles*/
+@media (max-width: 1000px) {
+  .slogan-container h2{
+    font-size: 4.5rem;
+    color: white;
+    margin-bottom: 2rem;
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .sideways-container{
+    width: 20%;
+    height: 90%;
+    color: white;
+    font-style: italic;
+   position: relative;
+   font-family: "Protest Guerrilla", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+   
+  
+  }
+  .sideways-div{
+    width: 210%;
+   
+    
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transform: rotate(-90deg);
+    transform-origin: top left;
+    margin-left: 2rem;
+  }
+  .btn-main-container{
+    width: 100%;
+  display: flex;
+  
+  }
+  .btn-main-container button{
+    color: white;
+    background-color: #430101;
+    padding: 0.5rem 1.5rem; /* Adjust padding to control the size of the oval */
+    border: none;
+    /* High border-radius for oval shape */
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.2s;
+    margin-right: 1rem;
+  }
+  .btn-main-container button:hover{
+    background-color: #6c0000;
+  }
+  .btn-main-container p{
+    font-size: .8rem;
+    color: rgba(255, 255, 255, 0.887);
+    text-align: left;
+    border-left: solid .1rem white;
+    padding-left: .5rem;
+  }
+  .home-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: auto;
+    clip-path: polygon(
+      15% 0%,   /* Top left */
+      85% 0%,   /* Top right */
+      100% 15%, /* Right top */
+      100% 85%, /* Right bottom */
+      85% 100%, /* Bottom right */
+      15% 100%, /* Bottom left */
+      0% 85%,   /* Left bottom */
+      0% 15%    /* Left top */
+  );
+  margin-left: 2rem;
+  }
+}
+@media (max-width: 800px) {
+  .home-img-container{
+    display: none;
+  }
+  main {
+    position: relative;
+    height: 35rem; /* Adjust as needed */
+    overflow: hidden;
+    width: 100%;
+    padding-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .slogan-container{
+    margin-right: 3rem;
+    width: 70%;
+  }
+  .slogan-container h2{
+    font-size: 5rem;
+    color: white;
+    margin-bottom: 2rem;
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .slogan-container span{
+    background: linear-gradient(45deg, #ffd700, #ffcc00, #ffb300, #f1c40f, #e1ad01);
+    -webkit-background-clip: text;
+    color: transparent;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  }
+  
+  
+  .btn-main-container{
+    width: 100%;
+  display: flex;
+  
+  }
+  .btn-main-container button{
+    color: white;
+    background-color: #430101;
+    padding: 0.5rem 1.5rem; /* Adjust padding to control the size of the oval */
+    border: none;
+    /* High border-radius for oval shape */
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.2s;
+    margin-right: 1rem;
+  }
+  .btn-main-container button:hover{
+    background-color: #6c0000;
+  }
+  .btn-main-container p{
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.887);
+    text-align: left;
+    border-left: solid .1rem white;
+    padding-left: .5rem;
+  }
+  .sideways-div{
+    width: 210%;
+   
+    
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transform: rotate(-90deg);
+    transform-origin: top left;
+    margin-left: 1rem;
+  }
+}
+@media (max-width: 740px) {
+  .sideways-container{
+    width: 20%;
+    height: 100%;
+    color: white;
+    font-style: italic;
+   position: relative;
+   font-family: "Protest Guerrilla", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+   
+  
+  }
+  .sideways-div{
+    width: 270%;
+   
+    
+    position: absolute;
+    top: 80%;
+    left: 0;
+    transform: rotate(-90deg);
+    transform-origin: top left;
+    margin-left: 1rem;
+  }
+}
+@media (max-width: 630px) {
+  .slogan-container h2{
+    font-size: 4rem;
+    color: white;
+    margin-bottom: 2rem;
+    font-family: "New Amsterdam", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .btn-main-container button{
+    color: white;
+    background-color: #430101;
+    padding: 0.5rem 1.5rem; /* Adjust padding to control the size of the oval */
+    border: none;
+    /* High border-radius for oval shape */
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.2s;
+    margin-right: 1rem;
+  }
+  .btn-main-container button:hover{
+    background-color: #6c0000;
+  }
+  .btn-main-container p{
+    font-size: .9rem;
+    color: rgba(255, 255, 255, 0.887);
+    text-align: left;
+    border-left: solid .1rem white;
+    padding-left: .5rem;
+    margin-bottom: 1rem;
+  }
+  .btn-main-container{
+    width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  
+  }
+  
+}
+@media (max-width: 585px) {
+  .top-div{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .1rem;
+  }
+  .top-div p{
+    width:40%;
+    font-style: italic;
+    font-size: .8rem;
+    font-weight: 600;
+    
+  }
+  .bottom-div{
+    width: 100%;
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+    font-size: .8rem;
+  }
+  .sideways-container{
+    width: 20%;
+    height: 100%;
+    color: white;
+    font-style: italic;
+   position: relative;
+   font-family: "Protest Guerrilla", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+   
+  
+  }
+  .sideways-div{
+    width: 340%;
+   
+    
+    position: absolute;
+    top: 80%;
+    left: 0;
+    transform: rotate(-90deg);
+    transform-origin: top left;
+    margin-left: .1rem;
+  }
+  .slogan-container {
+    margin-right: 1.5rem;
+  }
+}
+@media (max-width: 350px) {
+  .sideways-container{
+    display: none;
+  }
+  .slogan-container {
+    margin: 1.5rem;
+    width: 100%;
+  }
+}
+/*home section ends here*/
+
+
+
+
+/*about section starts here*/
+.about{
+  height: fit-content;
+  background-color: #290000;
+  color: rgba(255, 255, 255, 0.868);
+  background-image: url(bg.png);
+  padding: 2rem;
+  font-family: "New Amsterdam", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.1rem;
+}
+.about-section-container{
+  width: 100%;
+  height: 100%;
+  background-color: #110000;
+  color: rgba(255, 255, 255, 0.868);
+  background-image: url(bg.png);
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 2rem rgba(255, 255, 255, 0.108);
+}
+.section-title{
+  font-size: 3rem;
+  margin-bottom: 4rem;
+  
+}
+.about-info-div{
+  width: 100%;
+  height: 50%;
+  display: flex;
+  padding-top: 3rem;
+ 
+  align-items: center;
+  justify-content: space-between;
+}
+.about-paragraph-div{
+width: 50%;
+height: 100%;
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+.about-paragraph-div h3{
+font-size: 2.5rem;
+margin-bottom: 1rem;
+width: 100%;
+background: linear-gradient(45deg, #ffd700, #ffcc00, #ffb300, #f1c40f, #e1ad01);
+-webkit-background-clip: text;
+color: transparent;
+text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+.about-paragraph-div p{
+font-size: 1rem;
+margin-bottom: 4rem;
+}
+.bottom-icons{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.about-icon-div{
+  text-align: center;
+ border-radius: .5rem;
+  background: tan;
+padding: 1rem;
+text-shadow: 1px 1px 2px rgb(255, 255, 255);
+font-size: 1rem;
+margin-bottom: 0px;
+}
+.about-icon-div p{
+
+margin-bottom: 0px;
+}
+
+
+
+.about-img-div {
+  width: 40%; /* Set the container to be responsive */
+   /* You can adjust this height based on your needs */
+  overflow: hidden; /* Ensures no overflow from the image */
+  position: relative; /* Optional if you need positioning adjustments */
+}
+
+.about-img-div img {
+  width: 100%;  /* Make the image fill the container's width */
+  height: 100%; /* Make the image fill the container's height */
+  object-fit: cover; /* Ensures the image maintains its aspect ratio and covers the container */
+  display: block; /* Remove any extra spacing (like from inline images) */
+}
+@media (max-width: 1100px) {
+  .about-icon-div{
+    text-align: center;
+    height: 3rem;
+    width:33% ;
+    background: tan;
+  
+  text-shadow: 1px 1px 2px rgb(255, 255, 255);
+  font-size: .9rem;
+  }
+  .about-paragraph-div p{
+    font-size: 1rem;
+    margin-bottom: 4rem;
+    }
+    .bottom-icons{
+      width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: space-between;
+    }
+    .about-icon-div{
+      text-align: center;
+     border-radius: .5rem;
+      background: tan;
+    padding: .1rem;
+    text-shadow: 1px 1px 2px rgb(255, 255, 255);
+    font-size: 1rem;
+    margin-bottom: 0px;
+    }
+    .about-icon-div p{
+    
+    margin-bottom: 0px;
+    }
+}
+@media (max-width: 700px) {
+  .about-info-div{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    padding-top: 3rem;
+   flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .about-img-div {
+display: none;
+  }
+  .about-paragraph-div{
+    width: 100%;
+    height: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    }
+    .about-icon-div{
+      text-align: center;
+      height: 3rem;
+      background: tan;
+    width: auto;
+    text-shadow: 1px 1px 2px rgb(255, 255, 255);
+    font-size: .9rem;
+    }
+    .about{
+      height: fit-content;
+    }
+    .section-title{
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      
+    }
+}
+
+
+
+
+
+
+
+
+
+.artist-section{
+  
+  background-color: #290000;
+  color: rgba(255, 255, 255, 0.868);
+  background-image: url(bg.png);
+  padding: 2rem;
+  font-family: "New Amsterdam", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.1rem;
+}
+.subtitle{
+width: 50%;
+margin-left: 3rem;
+margin-bottom: 4rem;
+font-size: 1.3rem;
+}
+.artists-container{
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 equal columns */
+  grid-template-rows: repeat(2, auto);    /* 2 rows with automatic height */
+  gap: 20px; /* Optional: Adjust the space between grid items */
+  
+}
+.artist-div{
+  width: 100%;
+ 
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.artist-img-div {
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(
+    20% 0%,  /* Top left inward triangle */
+    80% 0%,  /* Top right inward triangle */
+    100% 20%, /* Right top inward triangle */
+    100% 80%, /* Right bottom inward triangle */
+    80% 100%, /* Bottom right inward triangle */
+    20% 100%, /* Bottom left inward triangle */
+    0% 80%,   /* Left bottom inward triangle */
+    0% 20%    /* Left top inward triangle */
+  );
+ border: goldenrod solid 0.1rem;
+ 
+
+}
+
+.artist-img-div img{
+  display: block;
+  width: 100%; /* Ensure the image covers the entire div */
+  height: 100%; /* Fill the container completely */
+  object-fit: cover; /* Keep the aspect ratio of the image */
+  filter: blur(0px);
+  box-shadow: 0 0 20px 5px rgba(255, 255, 255, 0.876); 
+  
+}
+.social-icons-div{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.social-icons-div i{
+  margin: 1rem;
+  background: linear-gradient(45deg, #ffd700, #ffcc00, #ffb300, #f1c40f, #e1ad01);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+  border-bottom: 1px solid white;
+  padding-bottom: .5rem;
+  font-weight: bolder;
+}
+.social-icons-div i:hover{
+  color: white;
+}
+.gallery-link-div{
+width: 100%;
+display: flex;
+justify-content: space-between;
+margin-bottom: 3rem;
+}
+.gallery-link-div span{
+  border-bottom: .1rem solid white;
+  padding-bottom: .5rem;
+
+}
+.gallery-link-div span a{
+color: white;
+text-decoration: none;
+font-size: 1.3rem;
+font-family: "Protest Guerrilla", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.gallery-link-div span a:hover{
+  background: linear-gradient(45deg, #ffd700, #ffcc00, #ffb300, #f1c40f, #e1ad01);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.line-div2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 55%;
+}
+.line-div2 div{
+  border-bottom: .1rem solid white;
+  width: 100%;
+}
+@media (max-width: 1100px) {
+  .artists-container{
+    width: 100%;
+  
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 3 equal columns */
+    grid-template-rows: repeat(2, auto);    /* 2 rows with automatic height */
+    gap: 1rem; /* Optional: Adjust the space between grid items */
+    
+  }
+}
+@media (max-width: 700px) {
+  .subtitle{
+    width: 90%;
+    margin-left: .5rem;
+    margin-bottom: 4rem;
+    font-size: 1rem;
+    }
+    .artists-container{
+      width: 100%;
+    
+      display: grid;
+      grid-template-columns: repeat(1, 1fr); /* 3 equal columns */
+      grid-template-rows: repeat(2, auto);    /* 2 rows with automatic height */
+      
+      
+    }
+    .artist-img-div {
+      width: 65%;
+      height: 100%;
+      clip-path: polygon(
+        20% 0%,  /* Top left inward triangle */
+        80% 0%,  /* Top right inward triangle */
+        100% 20%, /* Right top inward triangle */
+        100% 80%, /* Right bottom inward triangle */
+        80% 100%, /* Bottom right inward triangle */
+        20% 100%, /* Bottom left inward triangle */
+        0% 80%,   /* Left bottom inward triangle */
+        0% 20%    /* Left top inward triangle */
+      );
+     border: goldenrod solid 0.1rem;
+     
+    
+    }
+    
+    
+}
+@media (max-width: 500px) {
+  .subtitle{
+    width: 95%;
+    margin-left: .5rem;
+    margin-bottom: 4rem;
+    font-size: 1rem;
+    }
+    .section-title{
+      font-size: 2rem;
+      margin-bottom: 4rem;
+      
+    }
+    .gallery-link-div span a{
+      font-size: 1rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+.contact-section{
+  
+  background-color: #290000;
+  color: rgba(255, 255, 255, 0.868);
+  background-image: url(bg.png);
+  padding: 2rem;
+  font-family: "New Amsterdam", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0.1rem;
+}
+.contact-content-div{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.contact-description{
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact-description p{
+  margin: .5rem 0;
+  font-size: 1.1rem;
+  color: tan;
+  letter-spacing: 0.2rem;
+}
+.contact-img-div{
+width: 20%;
+border: gold 1px solid;
+}
+.contact-img-div img{
+  display: block;
+  width: 100%; /* Ensure the image covers the entire div */ /* Fill the container completely */
+  object-fit: cover; /* Keep the aspect ratio of the image */
+  filter: blur(0px);
+}
+.contact-info-div{
+  width: 30%;
+}
+.contact-info-div h3{
+width: 100%;
+text-align: center;
+font-size: 2rem;
+margin-bottom: 1rem;
+background: linear-gradient(45deg, #ffd700, #ffcc00, #ffb300, #f1c40f, #e1ad01);
+-webkit-background-clip: text;
+color: transparent;
+text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+.contact-info-div div{
+width: 100%;
+}
+.contact-info-div div p{
+  font-size: 1.3rem;
+  margin-bottom: .5rem;
+}
+.contact-info-div div span{
+  background: linear-gradient(45deg, #ffd700, #ffcc00, #ffb300, #f1c40f, #e1ad01);
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+.horton{
+  margin-top: 3rem;
+  width: 100%;
+  text-align: center;
+  font-size: 1.5rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+.horton span{
+  background: linear-gradient(45deg, #ffd700, #ffcc00, #ffb300, #f1c40f, #e1ad01);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+@media (max-width: 1100px) {
+  .contact-content-div{
+    flex-direction: column;
+    width: 100%;
+  }
+  .contact-description,.contact-info-div{
+    width: 100%;
+   
+  }
+  .contact-img-div{
+    width: 30%;
+  }
+}
