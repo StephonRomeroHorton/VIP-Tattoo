@@ -872,6 +872,7 @@ font-size: 1.3rem;
     0% 20%    /* Left top inward triangle */
   );
  border: goldenrod solid 0.1rem;
+ overflow: hidden;
  
 
 }
